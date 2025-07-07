@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FMC Premium Travel - Your Dreams, Our Expertise, Unforgettable Reality</title>
+    <meta name="description" content="Luxury travel concierge service offering curated experiences and personalized consultation. Transform your travel dreams into reality with FMC Tours." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ffmcpremiu4116back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-subtle">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span class="font-display text-xl font-semibold text-primary">FMC Tours</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-primary font-medium border-b-2 border-primary pb-1">Home</a>
+                        <a href="destinations_gallery.html" class="text-text-secondary hover:text-primary transition-fast">Destinations</a>
+                        <a href="about_us.html" class="text-text-secondary hover:text-primary transition-fast">About Us</a>
+                        <a href="contact_consultation_hub.html" class="text-text-secondary hover:text-primary transition-fast">Contact</a>
+                        <a href="travel_resources_library.html" class="text-text-secondary hover:text-primary transition-fast">Resources</a>
+                    </div>
+                </div>
+
+                <!-- WhatsApp CTA Button -->
+                <div class="hidden md:block">
+                    <a href="https://wa.me/918075637002?text=Hi! I'm interested in planning my dream journey with FMC Tours. Can you help me?" target="_blank" class="bg-accent hover:bg-accent-600 text-white px-6 py-2 rounded-lg font-cta font-medium transition-fast flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.700"/>
+                        </svg>
+                        <span>Plan Your Journey</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage.html" class="block px-3 py-2 text-primary font-medium">Home</a>
+                <a href="destinations_gallery.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Destinations</a>
+                <a href="about_us.html" class="block px-3 py-2 text-text-secondary hover:text-primary">About Us</a>
+                <a href="contact_consultation_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Contact</a>
+                <a href="travel_resources_library.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Resources</a>
+                <a href="https://wa.me/918075637002?text=Hi! I'm interested in planning my dream journey with FMC Tours. Can you help me?" target="_blank" class="block mx-3 mt-4 bg-accent text-white px-4 py-2 rounded-lg font-cta font-medium text-center">
+                    Plan Your Journey
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider Section -->
+    <section id="hero" class="relative h-screen overflow-hidden">
+        <div class="hero-slider relative w-full h-full">
+            <!-- Slide 1 - Maldives -->
+            <div class="slide active absolute inset-0 transition-opacity duration-1000">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Maldives Paradise" class="w-full h-full object-cover" loading="eager" onerror="this.src='https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                <div class="hero-overlay absolute inset-0"></div>
+            </div>
+            
+            <!-- Slide 2 - Switzerland -->
+            <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Swiss Alps" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo-2016/11/29/05/45/astronomy-1867616_1280.jpg'; this.onerror=null;" />
+                <div class="hero-overlay absolute inset-0"></div>
+            </div>
+            
+            <!-- Slide 3 - Japan -->
+            <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Japan Cherry Blossoms" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/161401/fushimi-inari-taisha-shrine-kyoto-japan-temple-161401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                <div class="hero-overlay absolute inset-0"></div>
+            </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="absolute inset-0 flex items-center justify-center z-10">
+            <div class="text-center text-white max-w-4xl mx-auto px-4">
+                <h1 class="font-display text-4xl md:text-6xl lg:text-hero font-bold mb-6 animate-fade-in">
+                    Your Dreams, Our Expertise,<br />
+                    <span class="text-secondary">Unforgettable Reality</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90 animate-slide-up">
+                    Experience luxury travel redefined. From curated destinations to personalized service, 
+                    we transform your wanderlust into extraordinary journeys.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
+                    <a href="https://wa.me/918075637002?text=Hi! I'm ready to plan my dream journey with FMC Tours. Let's discuss my travel preferences!" target="_blank" class="bg-accent hover:bg-accent-600 text-white px-8 py-4 rounded-xl font-cta font-semibold text-lg transition-smooth flex items-center space-x-3 floating-shadow">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.700"/>
+                        </svg>
+                        <span>Plan Your Dream Journey</span>
+                    </a>
+                    <a href="destinations_gallery.html" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-xl font-cta font-semibold text-lg transition-smooth">
+                        Explore Destinations
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Navigation -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+            <button class="slider-dot active w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-fast" onclick="currentSlide(1)"></button>
+            <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-fast" onclick="currentSlide(2)"></button>
+            <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-fast" onclick="currentSlide(3)"></button>
+        </div>
+    </section>
+
+    <!-- Instant Expert Consultation Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Instant Expert Consultation
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Connect with our travel experts instantly via WhatsApp. Get personalized recommendations, 
+                    real-time assistance, and expert guidance for your perfect journey.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Real-time Response -->
+                <div class="text-center p-6 bg-white rounded-2xl card-shadow">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold text-primary mb-2">Instant Response</h3>
+                    <p class="text-text-secondary">Average response time: <span class="font-semibold text-accent">2 minutes</span></p>
+                </div>
+
+                <!-- Expert Guidance -->
+                <div class="text-center p-6 bg-white rounded-2xl card-shadow">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold text-primary mb-2">Expert Guidance</h3>
+                    <p class="text-text-secondary">15+ years of travel expertise at your fingertips</p>
+                </div>
+
+                <!-- Satisfied Travelers -->
+                <div class="text-center p-6 bg-white rounded-2xl card-shadow">
+                    <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold text-primary mb-2">Happy Travelers</h3>
+                    <p class="text-text-secondary"><span class="font-semibold text-success">2,500+</span> satisfied customers</p>
+                </div>
+            </div>
+
+            <!-- WhatsApp CTA -->
+            <div class="text-center">
+                <a href="https://wa.me/918075637002?text=Hello! I'd like to start planning my dream vacation. Can you help me explore the best options?" target="_blank" class="inline-flex items-center space-x-3 bg-accent hover:bg-accent-600 text-white px-8 py-4 rounded-xl font-cta font-semibold text-lg transition-smooth floating-shadow">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.700"/>
+                    </svg>
+                    <span>Start Your Consultation Now</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curated Destinations Carousel -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Curated Premium Destinations
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Discover handpicked destinations that promise transformative experiences. 
+                    Each location is carefully selected for its unique charm and luxury offerings.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Destination Card 1 - Maldives -->
+                <div class="group relative overflow-hidden rounded-2xl card-shadow hover:floating-shadow transition-smooth">
+                    <div class="aspect-w-4 aspect-h-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Maldives Luxury Resort" class="w-full h-64 object-cover group-hover:scale-110 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="font-display text-xl font-semibold mb-2">Maldives</h3>
+                        <p class="text-sm opacity-90 mb-4">Overwater villas & pristine beaches</p>
+                        <a href="https://wa.me/918075637002?text=I'm interested in the Maldives luxury package. Can you share more details?" target="_blank" class="inline-flex items-center space-x-2 bg-accent hover:bg-accent-600 text-white px-4 py-2 rounded-lg font-cta font-medium text-sm transition-fast">
+                            <span>Enquire Now</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination Card 2 - Switzerland -->
+                <div class="group relative overflow-hidden rounded-2xl card-shadow hover:floating-shadow transition-smooth">
+                    <div class="aspect-w-4 aspect-h-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Swiss Alps Adventure" class="w-full h-64 object-cover group-hover:scale-110 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo-2016/11/29/05/45/astronomy-1867616_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="font-display text-xl font-semibold mb-2">Switzerland</h3>
+                        <p class="text-sm opacity-90 mb-4">Alpine adventures & scenic railways</p>
+                        <a href="https://wa.me/918075637002?text=I'd love to explore Switzerland! Can you help me plan the perfect Alpine experience?" target="_blank" class="inline-flex items-center space-x-2 bg-accent hover:bg-accent-600 text-white px-4 py-2 rounded-lg font-cta font-medium text-sm transition-fast">
+                            <span>Enquire Now</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination Card 3 - Japan -->
+                <div class="group relative overflow-hidden rounded-2xl card-shadow hover:floating-shadow transition-smooth">
+                    <div class="aspect-w-4 aspect-h-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Japan Cultural Experience" class="w-full h-64 object-cover group-hover:scale-110 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/161401/fushimi-inari-taisha-shrine-kyoto-japan-temple-161401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="font-display text-xl font-semibold mb-2">Japan</h3>
+                        <p class="text-sm opacity-90 mb-4">Cultural immersion & cherry blossoms</p>
+                        <a href="https://wa.me/918075637002?text=I'm fascinated by Japan! Can you create a cultural immersion itinerary for me?" target="_blank" class="inline-flex items-center space-x-2 bg-accent hover:bg-accent-600 text-white px-4 py-2 rounded-lg font-cta font-medium text-sm transition-fast">
+                            <span>Enquire Now</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination Card 4 - Dubai -->
+                <div class="group relative overflow-hidden rounded-2xl card-shadow hover:floating-shadow transition-smooth">
+                    <div class="aspect-w-4 aspect-h-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Dubai Luxury Experience" class="w-full h-64 object-cover group-hover:scale-110 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/162031/dubai-tower-arab-khalifa-162031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="font-display text-xl font-semibold mb-2">Dubai</h3>
+                        <p class="text-sm opacity-90 mb-4">Modern luxury & desert adventures</p>
+                        <a href="https://wa.me/918075637002?text=Dubai sounds amazing! Can you help me plan a luxury Dubai experience?" target="_blank" class="inline-flex items-center space-x-2 bg-accent hover:bg-accent-600 text-white px-4 py-2 rounded-lg font-cta font-medium text-sm transition-fast">
+                            <span>Enquire Now</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination Card 5 - Bali -->
+                <div class="group relative overflow-hidden rounded-2xl card-shadow hover:floating-shadow transition-smooth">
+                    <div class="aspect-w-4 aspect-h-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Bali Tropical Paradise" class="w-full h-64 object-cover group-hover:scale-110 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photo-2017/01/28/02/24/japan-2014616_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="font-display text-xl font-semibold mb-2">Bali</h3>
+                        <p class="text-sm opacity-90 mb-4">Tropical paradise & spiritual wellness</p>
+                        <a href="https://wa.me/918075637002?text=I'm interested in a Bali wellness retreat! Can you share package details?" target="_blank" class="inline-flex items-center space-x-2 bg-accent hover:bg-accent-600 text-white px-4 py-2 rounded-lg font-cta font-medium text-sm transition-fast">
+                            <span>Enquire Now</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination Card 6 - Thailand -->
+                <div class="group relative overflow-hidden rounded-2xl card-shadow hover:floating-shadow transition-smooth">
+                    <div class="aspect-w-4 aspect-h-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Thailand Adventure" class="w-full h-64 object-cover group-hover:scale-110 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="font-display text-xl font-semibold mb-2">Thailand</h3>
+                        <p class="text-sm opacity-90 mb-4">Island hopping & cultural temples</p>
+                        <a href="https://wa.me/918075637002?text=Thailand looks incredible! Can you help me plan an island hopping adventure?" target="_blank" class="inline-flex items-center space-x-2 bg-accent hover:bg-accent-600 text-white px-4 py-2 rounded-lg font-cta font-medium text-sm transition-fast">
+                            <span>Enquire Now</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="destinations_gallery.html" class="inline-flex items-center space-x-2 bg-primary hover:bg-primary-800 text-white px-8 py-4 rounded-xl font-cta font-semibold text-lg transition-smooth">
+                    <span>View All Destinations</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Customer Transformation Stories
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Real stories from travelers who trusted us with their dreams. 
+                    See how we've transformed wanderlust into unforgettable memories.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-2xl card-shadow">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=2'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Sarah Johnson</h4>
+                            <p class="text-sm text-text-secondary">Maldives Honeymoon</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        "FMC Tours made our honeymoon absolutely magical. The overwater villa, 
+                        private dining, and sunset cruise exceeded all expectations. 
+                        Their attention to detail was incredible!"
+                    </p>
+                    <div class="flex text-accent">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-2xl card-shadow">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Rajesh Patel" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=2'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Rajesh Patel</h4>
+                            <p class="text-sm text-text-secondary">Switzerland Family Trip</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        "The Swiss Alps experience was breathtaking! FMC Tours organized everything perfectly - 
+                        from the scenic train rides to the mountain adventures. 
+                        My family still talks about this trip!"
+                    </p>
+                    <div class="flex text-accent">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-2xl card-shadow">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Priya Sharma" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photo-2016/11/29/13/14/attractive-1869761_1280.jpg'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Priya Sharma</h4>
+                            <p class="text-sm text-text-secondary">Japan Cultural Tour</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">
+                        "The Japan cultural immersion was life-changing! From the tea ceremonies 
+                        to the cherry blossom viewing, every moment was perfectly curated. 
+                        FMC Tours truly understands luxury travel."
+                    </p>
+                    <div class="flex text-accent">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Counter -->
+            <div class="text-center">
+                <div class="inline-flex items-center space-x-8 bg-white px-8 py-6 rounded-2xl card-shadow">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-primary">2,500+</div>
+                        <div class="text-sm text-text-secondary">Happy Travelers</div>
+                    </div>
+                    <div class="w-px h-12 bg-gray-200"></div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-secondary">15+</div>
+                        <div class="text-sm text-text-secondary">Years Experience</div>
+                    </div>
+                    <div class="w-px h-12 bg-gray-200"></div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent">50+</div>
+                        <div class="text-sm text-text-secondary">Destinations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Trusted by Thousands, Certified by Industry Leaders
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Our commitment to excellence is recognized by leading travel organizations 
+                    and trusted by discerning travelers worldwide.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Certification 1 -->
+                <div class="text-center p-6 bg-surface rounded-2xl">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">IATA Certified</h3>
+                    <p class="text-sm text-text-secondary">International Air Transport Association</p>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="text-center p-6 bg-surface rounded-2xl">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Secure Payments</h3>
+                    <p class="text-sm text-text-secondary">SSL Encrypted & PCI Compliant</p>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="text-center p-6 bg-surface rounded-2xl">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Award Winner</h3>
+                    <p class="text-sm text-text-secondary">Best Luxury Travel Agency 2024</p>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="text-center p-6 bg-surface rounded-2xl">
+                    <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Travel Insurance</h3>
+                    <p class="text-sm text-text-secondary">Comprehensive Coverage Included</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span class="font-display text-xl font-semibold">FMC Tours</span>
+                    </div>
+                    <p class="text-primary-200 mb-4">
+                        Your dreams, our expertise, unforgettable reality. 
+                        Transforming wanderlust into extraordinary journeys since 2009.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-primary-200 hover:text-white transition-fast">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-primary-200 hover:text-white transition-fast">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-primary-200 hover:text-white transition-fast">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-primary-200 hover:text-white transition-fast">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-primary-200 hover:text-white transition-fast">Home</a></li>
+                        <li><a href="destinations_gallery.html" class="text-primary-200 hover:text-white transition-fast">Destinations</a></li>
+                        <li><a href="about_us.html" class="text-primary-200 hover:text-white transition-fast">About Us</a></li>
+                        <li><a href="contact_consultation_hub.html" class="text-primary-200 hover:text-white transition-fast">Contact</a></li>
+                        <li><a href="travel_resources_library.html" class="text-primary-200 hover:text-white transition-fast">Travel Resources</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><span class="text-primary-200">Luxury Packages</span></li>
+                        <li><span class="text-primary-200">Custom Itineraries</span></li>
+                        <li><span class="text-primary-200">Group Travel</span></li>
+                        <li><span class="text-primary-200">Corporate Travel</span></li>
+                        <li><span class="text-primary-200">Travel Insurance</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Get in Touch</h3>
+                    <div class="space-y-3">
+                        <a href="https://wa.me/918075637002" target="_blank" class="flex items-center space-x-3 text-primary-200 hover:text-white transition-fast">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.700"/>
+                            </svg>
+                            <span>+91 80756 37002</span>
+                        </a>
+                        <div class="flex items-center space-x-3 text-primary-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span>info@fmctours.com</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-primary-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span>Mumbai, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 pt-8 text-center">
+                <p class="text-primary-200">
+                    © 2025 FMC Tours and Travels. All Rights Reserved. | 
+                    <a href="#" class="hover:text-white transition-fast">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-white transition-fast">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/918075637002?text=Hi! I'm interested in planning my dream journey with FMC Tours. Can you help me?" target="_blank" class="bg-accent hover:bg-accent-600 text-white p-4 rounded-full floating-shadow transition-smooth flex items-center space-x-2 group">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.700"/>
+            </svg>
+            <span class="hidden group-hover:block whitespace-nowrap">Chat with us</span>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Hero slider functionality
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.slider-dot');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('opacity-0', i !== index);
+                slide.classList.toggle('active', i === index);
+            });
+            
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+                dot.classList.toggle('opacity-100', i === index);
+                dot.classList.toggle('opacity-50', i !== index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+            showSlide(currentSlideIndex);
+        }
+
+        function currentSlide(index) {
+            currentSlideIndex = index - 1;
+            showSlide(currentSlideIndex);
+        }
+
+        // Auto-advance slides
+        setInterval(nextSlide, 5000);
+
+        // Initialize first slide
+        showSlide(0);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white/98');
+                nav.classList.remove('bg-white/95');
+            } else {
+                nav.classList.add('bg-white/95');
+                nav.classList.remove('bg-white/98');
+            }
+        });
+    </script>
+</body>
+</html>

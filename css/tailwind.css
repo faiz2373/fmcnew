@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #1B365D; /* navy-900 - Trustworthy foundation */
+  --color-primary-50: #F0F4F8;
+  --color-primary-100: #D9E2EC;
+  --color-primary-200: #BCCCDC;
+  --color-primary-300: #9FB3C8;
+  --color-primary-400: #829AB1;
+  --color-primary-500: #627D98;
+  --color-primary-600: #486581;
+  --color-primary-700: #334E68;
+  --color-primary-800: #243B53;
+  --color-primary-900: #1B365D;
+
+  /* Secondary Colors */
+  --color-secondary: #87CEEB; /* sky-blue-300 - Endless possibilities */
+  --color-secondary-50: #F0F9FF;
+  --color-secondary-100: #E0F2FE;
+  --color-secondary-200: #BAE6FD;
+  --color-secondary-300: #87CEEB;
+  --color-secondary-400: #38BDF8;
+  --color-secondary-500: #0EA5E9;
+  --color-secondary-600: #0284C7;
+  --color-secondary-700: #0369A1;
+  --color-secondary-800: #075985;
+  --color-secondary-900: #0C4A6E;
+
+  /* Accent Colors */
+  --color-accent: #D4AF37; /* gold-500 - Luxury moments */
+  --color-accent-50: #FFFBEB;
+  --color-accent-100: #FEF3C7;
+  --color-accent-200: #FDE68A;
+  --color-accent-300: #FCD34D;
+  --color-accent-400: #FBBF24;
+  --color-accent-500: #D4AF37;
+  --color-accent-600: #D97706;
+  --color-accent-700: #B45309;
+  --color-accent-800: #92400E;
+  --color-accent-900: #78350F;
+
+  /* Background Colors */
+  --color-background: #FFFFFF; /* white - Clean canvas */
+  --color-surface: #F8FAFB; /* gray-50 - Subtle depth */
+
+  /* Text Colors */
+  --color-text-primary: #2D3748; /* gray-800 - Professional clarity */
+  --color-text-secondary: #718096; /* gray-500 - Supporting information */
+
+  /* Status Colors */
+  --color-success: #38A169; /* green-600 - Booking confidence */
+  --color-warning: #D69E2E; /* yellow-600 - Seasonal availability */
+  --color-error: #E53E3E; /* red-600 - Form assistance */
+
+  /* Shadow Variables */
+  --shadow-subtle: 0 4px 12px rgba(27, 54, 93, 0.1);
+  --shadow-card: 0 2px 8px rgba(27, 54, 93, 0.08);
+  --shadow-floating: 0 8px 24px rgba(27, 54, 93, 0.12);
+
+  /* Animation Variables */
+  --transition-fast: 300ms ease-out;
+  --transition-smooth: 400ms ease-out;
+}
+
+@layer base {
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: var(--transition-fast);
+  }
+
+  .accent-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+  }
+}
+
+@layer components {
+  .hero-overlay {
+    background: linear-gradient(135deg, rgba(27, 54, 93, 0.7) 0%, rgba(135, 206, 235, 0.3) 100%);
+  }
+
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+
+  .floating-shadow {
+    box-shadow: var(--shadow-floating);
+  }
+
+  .subtle-shadow {
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .parallax-slow {
+    transform: translateY(calc(var(--scroll-y) * 0.5px));
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-fast {
+    transition: var(--transition-fast);
+  }
+}
