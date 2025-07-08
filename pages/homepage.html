@@ -123,6 +123,102 @@
             <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-fast" onclick="currentSlide(3)"></button>
         </div>
     </section>
+        <!-- Journey Architect Preview -->
+    <section id="journey-architect" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-montserrat font-bold text-primary mb-4">Journey Architect</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+                    Create your perfect itinerary with our intelligent trip planning tool
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="card-elevated p-8">
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <!-- Destination Selection -->
+                        <div>
+                            <label class="block text-sm font-montserrat font-semibold text-text-primary mb-2">
+                                Choose Destination
+                            </label>
+                            <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-300 focus:border-primary">
+                                <option>Select destination...</option>
+                                <option>Thailand</option>
+                                <option>Bali, Indonesia</option>
+                                <option>Maldives</option>
+                                <option>Dubai, UAE</option>
+                                <option>Vietnam</option>
+                                <option>Malaysia</option>
+                                <option>China</option>
+                                <option>Azerbaijan</option>
+                                <option>Kazakhstan</option>
+                                <option>Lakshadweep</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Duration Selection -->
+                        <div>
+                            <label class="block text-sm font-montserrat font-semibold text-text-primary mb-2">
+                                Trip Duration
+                            </label>
+                            <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-300 focus:border-primary">
+                                <option>Select duration...</option>
+                                <option>3-4 days</option>
+                                <option>5-7 days</option>
+                                <option>8-10 days</option>
+                                <option>11-14 days</option>
+                                <option>15+ days</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Experience Type -->
+                        <div>
+                            <label class="block text-sm font-montserrat font-semibold text-text-primary mb-2">
+                                Experience Type
+                            </label>
+                            <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-300 focus:border-primary">
+                                <option>Select experience...</option>
+                                <option>Cultural Immersion</option>
+                                <option>Luxury Relaxation</option>
+                                <option>Adventure & Nature</option>
+                                <option>Culinary Journey</option>
+                                <option>Romantic Getaway</option>
+                                <option>Family Adventure</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Budget Range -->
+                    <div class="mb-8">
+                        <label class="block text-sm font-montserrat font-semibold text-text-primary mb-2">
+                            Budget Range (per person)
+                        </label>
+                        <div class="flex items-center space-x-4">
+                            <input type="range" min="1000" max="10000" value="3000" class="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
+                            <span class="text-primary font-semibold">$3,000</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-text-secondary mt-1">
+                            <span>$1,000</span>
+                            <span>$10,000+</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Generate Itinerary Button -->
+                    <div class="text-center">
+                        <button class="btn-primary text-lg px-8 py-4">
+                            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                            Generate My Itinerary
+                        </button>
+                        <p class="text-sm text-text-secondary mt-2">
+                            Get instant suggestions tailored to your preferences
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Instant Expert Consultation Section -->
     <section class="py-16 bg-surface">
